@@ -10,7 +10,7 @@ const TouristPlace = (props) => {
         {props.places.map((place, index) => (
           <div key={index}>
             <div
-              className={`mt-5 mb-1 border-gray-400 border-[0.5px] rounded-lg w-[200px] flex flex-col text-center justify-center "
+              className={`mt-5 mb-1 border-gray-400 border-[0.5px] rounded-lg w-[360px] flex flex-col text-center justify-center "
             ${
               place.whenToVisit === "Summer" ? "bg-yellow-200" : "bg-blue-200"
             }`}
@@ -18,14 +18,14 @@ const TouristPlace = (props) => {
               <img
                 src={place.img}
                 alt={`${place.placeName} image`}
-                className="w-[200px] rounded-lg p-1"
+                className="w-[360px] rounded-lg p-1"
               />
-              <h2 className="text-[8px] text-pink-400 ">{place.placeName}</h2>
-              <p className="text-[5px] text-gray-400 ">{place.desc}</p>
-              <p className="text-[5px] text-gray-800 font-bold">
+              <h2 className="text-xl text-pink-400 ">{place.placeName}</h2>
+              <p className="text-sm text-gray-400 ">{place.desc}</p>
+              <p className="text-sm text-gray-800 font-bold">
                 Best time to visit: {place.whenToVisit}
               </p>
-              <p className="text-[3px] text-orange-500">
+              <p className="text-xl text-orange-500">
                 Ratings: {place.ratings}⭐
               </p>
               <p className="text-[4px] text-black pb-2">
