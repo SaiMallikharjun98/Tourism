@@ -25,16 +25,16 @@ const TouristPlace = (props) => {
               <p className="text-sm text-gray-800 font-bold">
                 Best time to visit: {place.whenToVisit}
               </p>
-              <p className="text-xl text-orange-500">
+              <p className="text-xs text-orange-500">
                 Ratings: {place.ratings}⭐
               </p>
-              <p className="text-[4px] text-black pb-2">
+              <p className="text-xl text-black pb-2">
                 Estimated Price: ₹{place.price}
               </p>
               {place.price < 12000 ? (
-                <p className="text-green-500 text-[5px]">Cheaper</p>
+                <p className="text-green-500 text-sm">Cheaper</p>
               ) : (
-                <p className="text-pink-500 text-[5px]">Expensive</p>
+                <p className="text-pink-500 text-sm">Expensive</p>
               )}
             </div>
           </div>
