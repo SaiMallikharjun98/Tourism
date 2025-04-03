@@ -18,7 +18,7 @@ const TouristPlace = (props) => {
               <img
                 src={place.img}
                 alt={`${place.placeName} image`}
-                className="w-[360px] rounded-lg p-1"
+                className="w-[360px] rounded-lg p-3"
               />
               <h2 className="text-xl text-pink-400 ">{place.placeName}</h2>
               <p className="text-sm text-gray-400 ">{place.desc}</p>
