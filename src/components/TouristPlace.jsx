@@ -6,13 +6,13 @@ const TouristPlace = (props) => {
       <h1 className=" mt-10 text-5xl text-center text-blue-500 font-bold ">
         Tourism Places
       </h1>
-      <div className="flex flex-wrap justify-center gap-10">
+      <div className="flex flex-wrap justify-center gap-5">
         {props.places.map((place, index) => (
           <div key={index}>
             <div
               className={`mt-5 mb-1 border-gray-400 border-[0.5px] rounded-lg w-[360px] flex flex-col text-center justify-center "
             ${
-              place.whenToVisit === "Summer" ? "bg-yellow-200" : "bg-blue-200"
+              place.whenToVisit === "Summer" ? "bg-yellow-200 text-xl" : "bg-blue-200 text-xl"
             }`}
             >
               <img
